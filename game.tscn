@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b7mrb4tfckou"]
+
+[node name="Game" type="Node"]
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://player.tscn")
+spawn_path = NodePath("../Players")
+spawn_limit = 5
+
+[node name="Players" type="Node" parent="."]
